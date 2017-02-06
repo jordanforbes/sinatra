@@ -1,7 +1,5 @@
 <html>
 <head>
-	<link rel="stylesheet" href="styles/sassmain.css">
-	<link href="https://fonts.googleapis.com/css?family=Bahiana|Barrio" rel="stylesheet">
 </head>
 <body>
 	<h1>first time with sinatra</h1>
@@ -15,9 +13,32 @@
 		</strong> 
 	<% end %>
 
-	<h2 class="hi">friends</h2>
+	<h2>friends</h2>
 		<% @names.each do |name| %>
 			<li><%= name %></li>
 		<% end %>
+	<!--
+	<% #puts "Who was the first president of the united states?"
+
+		#answer = gets.chomp.downcase
+
+	#if answer == "george washington"
+	#	puts Rainbow('That is the correct answer').darkgreen
+	#else
+	#	puts Rainbow('That is the wrong answer').red
+	#end%>
+	-->
+	<div class="container">
+	<form action="/" method="post">
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email" />
+		<label for="body">Body</label>
+		<textarea type="text" name="body" id="body" rows="20" cols="50"></textarea>
+		<button type="submit">Go!</button>
+	</form>
+	</div>
+	<div class="button">
+		<p>Hello</p>
+	</div>
 </body>
 </html>

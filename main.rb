@@ -13,6 +13,9 @@ get "/main" do
 end
 
 get "/blog" do
+
+require 'rainbow'
+
 	@names = %w(Leah Tyne Paul)
 	erb :blog
 end
